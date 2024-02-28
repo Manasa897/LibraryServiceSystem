@@ -4,6 +4,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.Data;
 import lombok.*;
 
 @Table(name="library_member")
@@ -27,7 +28,7 @@ public class LibraryMember {
     @Column(name="phone_number")
     private Long phoneNumber;
 
-    @Column(name="memebership_level")
+    @Column(name="membership_level")
     private String memberShipLevel;
 
     @Column(name="address_id")
